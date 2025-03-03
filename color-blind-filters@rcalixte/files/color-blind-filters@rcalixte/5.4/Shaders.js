@@ -216,6 +216,7 @@ var ShaderLib = class {
                         correction.b = error.r * 1.5 + error.g * 0.0 + error.b * 0.0;
 
                     // tritanopia / tritanomaly corrections (GdH)
+                    // correction.r = error.r * 0.5 + error.g * 0.5 + error.b * 0.0; correction.g = error.r * 6.5 + error.g * 1.0 + error.b * -1.0; correction.b = error.r * 2.0 + error.g * 2.0 + error.b * 0.0; these are my changes that work more similarly to other color blind filters
                     } else if ( COLORBLIND_MODE == 4 ) {
                         correction.r = error.r * 0.3 + error.g * 0.5 + error.b * 0.4;
                         correction.g = error.r * 0.5 + error.g * 0.7 + error.b * 0.3;
